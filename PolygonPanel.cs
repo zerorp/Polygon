@@ -37,7 +37,9 @@ namespace WindowsFormsApplication1
             base.OnPaint(e);
             //DrawAxes(e.Graphics);
             e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
-            e.Graphics.DrawImage(Resource1.Image1, new Rectangle(new Point(), myPanel1.ClientSize));
+
+            //you can add a background picture here.
+            //e.Graphics.DrawImage(Resource1.Image1, new Rectangle(new Point(), myPanel1.ClientSize));
             foreach (var polygon in polygonList)
             {
                 PaintPoints(e, polygon);
